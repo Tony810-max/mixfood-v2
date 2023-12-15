@@ -1,8 +1,12 @@
 import { Button } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import BookTableModal from '../../BookTableModal';
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <div className="absolute flex gap-4 py-20 items-center z-[999] invisible lg:visible">
       <Link
@@ -38,9 +42,11 @@ export default function Header() {
       <Button
         variant="outlined"
         className="border-[#fff] text-xl font-light px-4 text-[#fff] hover:bg-gray-600"
+        onClick={handleOpen}
       >
         BOOK A TABLE
       </Button>
+      <BookTableModal onClose={handleClose} open={open} />
     </div>
   );
 }

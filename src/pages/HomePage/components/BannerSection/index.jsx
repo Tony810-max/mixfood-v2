@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 
 import bannerImage from '../../../../assets/images/Banner/banner.png';
 import { Button } from '@mui/material';
-import ModalBookATable from '../../../../components/ModalBookATable';
+import BookTableModal from '../../../../components/BookTableModal';
 
 export default function BannerSection() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div className="w-full h-[100vh] relative flex justify-center items-center">
       <img
@@ -31,7 +33,7 @@ export default function BannerSection() {
         >
           BOOK A TABLE
         </Button>
-        <ModalBookATable valueOpen={open} />
+        <BookTableModal onClose={handleClose} open={open} />
       </div>
     </div>
   );
