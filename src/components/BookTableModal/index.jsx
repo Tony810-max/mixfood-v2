@@ -19,11 +19,9 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
-  p: 4,
 };
 
 export default function BookTableModal({ onClose, open }) {
@@ -34,12 +32,12 @@ export default function BookTableModal({ onClose, open }) {
         onClose={onClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-        className="absolute"
+        className="absolute sm:w-full"
       >
-        <Box sx={style}>
+        <Box className="w-[340px] md:w-[400px] p-4 md:p-6" sx={style}>
           <XCircle
-            className="right-5 top-2 absolute"
-            size={28}
+            className="right-4 md:right-6 top-4 md:top-6 absolute"
+            size={32}
             onClick={onClose}
           />
           <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -47,34 +45,25 @@ export default function BookTableModal({ onClose, open }) {
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             <form className="flex flex-col gap-5">
-              <TextField id="demo-helper-text-misaligned" label="Full Name" />
-              <TextField
-                type="number"
-                id="demo-helper-text-misaligned-no-helper"
-                label="Phone Number"
-              />
+              <TextField label="Full Name" />
+              <TextField label="Phone Number" />
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={['DateTimePicker']}>
                   <DateTimePicker label="Basic date time picker" />
                 </DemoContainer>
               </LocalizationProvider>
-              <TextField
-                type="number"
-                id="demo-helper-text-misaligned-no-helper"
-                label="Number of people participating"
-              />
-
+              <TextField type="number" label="Number of people participating" />
               <textarea
                 placeholder="Message...!!!"
-                className="border-solid border-2"
-              ></textarea>
+                className="border-solid border-2 p-2"
+              />
               <FormHelperText className="text-sm">
                 Please kindly review the information once again before making a
                 reservation.
               </FormHelperText>
               <div className="flex items-center">
-                <Checkbox color="success" className="self-start" />
-                <span className="text-sm whitespace-nowrap font-bold italic">
+                <Checkbox color="success" />
+                <span className="text-sm whitespace-normal font-bold italic">
                   I confirm that the above information is correct.
                 </span>
               </div>

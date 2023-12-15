@@ -10,12 +10,9 @@ import { AlignJustify } from 'lucide-react';
 
 export default function HomePage() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
-  console.log(toggleSidebar);
+
   return (
-    <div
-      className="relative flex flex-col min-h-[100vh] items-end lg:items-center"
-      onClick={() => setToggleSidebar(!toggleSidebar)}
-    >
+    <div className="relative flex flex-col min-h-[100vh] items-end lg:items-center">
       <div
         onClick={() => setToggleSidebar(!toggleSidebar)}
         className="absolute z-50 top-5 right-5 self-end visible lg:invisible"
