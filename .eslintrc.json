@@ -33,6 +33,13 @@
       "node": {
         "extensions": [".js", ".jsx"]
       }
+    },
+    "import/core-modules": ["swiper"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"],
+        "moduleDirectory": ["node_modules", "./src"]
+      }
     }
   }
 }

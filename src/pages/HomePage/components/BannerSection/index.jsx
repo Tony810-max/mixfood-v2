@@ -28,7 +28,7 @@ export default function BannerSection() {
         </span>
         <Button
           variant="contained"
-          className="bg-[#bfa58a] text-2xl px-8 mt-8 hover:bg-slate-700"
+          className="bg-[--primary-color] text-2xl px-8 mt-8 hover:bg-[--secondary-color]"
           onClick={handleOpen}
         >
           BOOK A TABLE
