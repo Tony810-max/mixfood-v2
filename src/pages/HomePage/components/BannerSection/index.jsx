@@ -17,14 +17,14 @@ export default function BannerSection() {
         className="absolute w-full bg-contain no-repeat h-full"
       />
       <div className="absolute flex flex-col items-center gap-4 text-justify	">
-        <span className="text-[var(--white-color)] text-2xl sm:text-6xl font-light drop-shadow">
-          THE UNIQUE
+        <span className="text-[var(--white-color)]  text-2xl sm:text-6xl font-light drop-shadow">
+          THAI RESTAURANT
         </span>
-        <span className="text-[var(--white-color)] text-5xl sm:text-9xl font-dancing-script">
-          Restaurant
+        <span className="text-[var(--white-color)]  text-4xl sm:text-9xl font-dancing-script">
+          MIX FOOD
         </span>
         <span className="text-[var(--white-color)] text-xl font-medium">
-          STEAK HOUSE | FISH MENU
+          THAI RESTAURANT DA NANG
         </span>
         <Button
           variant="contained"

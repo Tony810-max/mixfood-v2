@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+// import { Autoplay } from 'swiper';
 // components
 import CardFood from '../../../../components/AboutFoodCard';
 
@@ -25,11 +25,13 @@ export default function AboutSection() {
       </div>
       <div className="flex flex-col xl:flex-row mt-14 justify-between font-Roboto-font gap-12">
         <div className="flex flex-1 flex-col gap-4">
-          <span className="font-bold text-3xl italic">ABOUT US</span>
-          <span className="font-medium text-xl ">
+          <span className="font-extrabold text-3xl lg:text-5xl italic font-dancing-script">
+            ABOUT US
+          </span>
+          <span className="font-medium text-xl italic">
             Welcome to our Thai restaurant...!
           </span>
-          <span className="text-justify">
+          <span className="text-justify text-lg font-poppins-font">
             We are a family-owned business that has been serving authentic Thai
             cuisine for over 2 years. Our menu features a wide variety of dishes
             that are made with fresh ingredients and traditional Thai spices. We
@@ -42,9 +44,9 @@ export default function AboutSection() {
           <Link to="/">
             <Button
               variant="contained"
-              className="bg-[--primary-color] hover:bg-[--secondary-color] w-full"
+              className="bg-[--primary-color] hover:bg-[--secondary-color] w-full text-xl"
             >
-              LEARN MORE
+              VIEW THE MENU
             </Button>
           </Link>
         </div>
@@ -56,7 +58,13 @@ export default function AboutSection() {
           />
         </div>
       </div>
-      <Swiper spaceBetween={20} slidesPerView={3} className="mt-4">
+      <Swiper
+        // modules={[Autoplay]}
+        // autoplay={{ delay: 2500, disableOnInteraction: false }}
+        spaceBetween={20}
+        slidesPerView={3}
+        className="mySwiper mt-4 "
+      >
         <SwiperSlide className="h-[180px] lg:h-[400px]">
           <CardFood image={padthai} name={'PAD THAI'} />
         </SwiperSlide>

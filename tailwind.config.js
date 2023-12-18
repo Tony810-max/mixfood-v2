@@ -6,6 +6,8 @@ module.exports = {
     fontFamily: {
       'dancing-script': ['Dancing Script', 'cursive'],
       'Roboto-font': ['Roboto', 'sans-serif'],
+      'poppins-font': ['Poppins', 'sans-serif'],
+      'pinyon-section': ['Pinyon Script', 'cursive'],
     },
     extend: {
       animation: {
