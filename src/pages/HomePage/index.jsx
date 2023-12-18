@@ -11,6 +11,7 @@ import Sidebar from '../../components/layout/Sidebar';
 // sections
 import AboutSection from './components/AboutSection';
 import BookSection from './components/BookSection';
+import OurSeviceSection from './components/OurSeviceSection';
 
 export default function HomePage() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
@@ -28,6 +29,7 @@ export default function HomePage() {
       <BannerSection />
       <AboutSection />
       <BookSection />
+      <OurSeviceSection />
     </div>
   );
 }

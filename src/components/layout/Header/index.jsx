@@ -9,18 +9,19 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
   return (
-    <div className="absolute container flex  py-20 items-center justify-between z-[999] invisible lg:visible">
+    <div className="container justify-between absolute hidden lg:flex py-20 items-center z-[999]">
       <Link
         to={'/'}
-        className="flex flex-col justify-center text-center gap-2 no-underline"
+        className="flex flex-col justify-center gap-2 no-underline"
       >
         <img alt="" src={logo} className="w-[250px] lg:w-[300px]" />
-        <span className="text-[var(--white-color)] italic text-sm w-full">
+        <span className="text-[var(--white-color)] italic text-sm w-full text-center">
           THAI RESTAURANT DA NANG
         </span>
       </Link>
-      <div className="flex justify-between gap-4 ">
+      <div className="flex gap-4 ">
         <Link
           to={'#'}
           className="hover:opacity-60 no-underline text-[var(--white-color)] text-2xl font-light"
