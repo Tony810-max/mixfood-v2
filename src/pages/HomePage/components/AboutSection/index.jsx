@@ -41,7 +41,7 @@ export default function AboutSection() {
             two, we have something for everyone. Come visit us today and
             experience the flavors of Thailand!
           </span>
-          <Link to="/">
+          <Link to="/" className="no-underline">
             <Button
               variant="contained"
               className="bg-[--primary-color] hover:bg-[--secondary-color] w-full text-xl"
