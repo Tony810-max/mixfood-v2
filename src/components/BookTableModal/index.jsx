@@ -62,7 +62,7 @@ export default function BookTableModal({ onClose, open }) {
                 reservation.
               </FormHelperText>
               <div className="flex items-center">
-                <Checkbox color="success" />
+                <Checkbox color="success" defaultChecked />
                 <span className="text-sm whitespace-normal font-bold italic">
                   I confirm that the above information is correct.
                 </span>

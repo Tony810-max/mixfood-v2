@@ -17,10 +17,10 @@ export default function BannerSection() {
         className="absolute w-full bg-contain no-repeat h-full"
       />
       <div className="absolute flex flex-col items-center gap-4 text-justify	">
-        <span className="text-[var(--white-color)]  text-2xl sm:text-6xl font-light drop-shadow">
+        <span className="text-[var(--white-color)]  text-2xl md:text-6xl font-light drop-shadow">
           THAI RESTAURANT
         </span>
-        <span className="text-[var(--white-color)]  text-4xl sm:text-9xl font-dancing-script">
+        <span className="text-[var(--white-color)]  text-4xl md:text-9xl font-dancing-script">
           MIX FOOD
         </span>
         <span className="text-[var(--white-color)] text-xl font-medium">

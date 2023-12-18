@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function AboutUs() {
   return (
-    <div className="flex flex-col xl:flex-row mt-14 justify-between font-Roboto-font gap-12">
+    <div className="flex flex-col xl:flex-row mt-14 px-6  justify-between font-Roboto-font gap-12">
       <div className="flex flex-1 flex-col gap-4">
         <span className="font-extrabold text-3xl lg:text-5xl italic font-dancing-script">
           ABOUT US
