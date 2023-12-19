@@ -12,6 +12,7 @@ import Sidebar from '../../components/layout/Sidebar';
 import AboutSection from './components/AboutSection';
 import BookSection from './components/BookSection';
 import OurSeviceSection from './components/OurSeviceSection';
+import BestMenuSection from './components/BestMenuSection';
 
 export default function HomePage() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
@@ -30,6 +31,7 @@ export default function HomePage() {
       <AboutSection />
       <BookSection />
       <OurSeviceSection />
+      <BestMenuSection />
     </div>
   );
 }
