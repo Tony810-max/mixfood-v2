@@ -32,9 +32,12 @@ export default function BookTableModal({ onClose, open }) {
         onClose={onClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-        className="absolute sm:w-full"
+        className="absolute sm:w-full h-full "
       >
-        <Box className="w-[340px] md:w-[400px] p-4 md:p-6" sx={style}>
+        <Box
+          className="max-[300px]:w-full  w-[340px] md:w-[400px] p-4 md:p-6 overflow-y-auto h-[600px] sm:h-auto  "
+          sx={style}
+        >
           <XCircle
             className="right-4 md:right-6 top-4 md:top-6 absolute"
             size={32}
@@ -43,8 +46,8 @@ export default function BookTableModal({ onClose, open }) {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Book A Table
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            <form className="flex flex-col gap-5">
+          <Typography id="modal-modal-description" className="" sx={{ mt: 2 }}>
+            <form className="flex flex-col gap-5  ">
               <TextField label="Full Name" />
               <TextField label="Phone Number" />
               <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -67,7 +70,9 @@ export default function BookTableModal({ onClose, open }) {
                   I confirm that the above information is correct.
                 </span>
               </div>
-              <Button variant="contained">Book</Button>
+              <Button className="bg-[--primary-color] hover:bg-[--secondary-color] sm:text-xl text-lg text-[--white-color] ">
+                Book
+              </Button>
             </form>
           </Typography>
         </Box>
