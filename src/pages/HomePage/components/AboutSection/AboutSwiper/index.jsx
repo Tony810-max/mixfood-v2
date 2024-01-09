@@ -65,7 +65,7 @@ export default function AboutSwiper() {
         <CardFood image={thaiShrimpSalad} name={'THAI SHRIMP SALAD'} />
       </SwiperSlide>
       <SwiperSlide className="h-[180px] lg:h-[400px]">
-        <CardFood image={hotPot} name={'HOTPOT'} />
+        <CardFood image={hotPot} name={'THAI HOTPOT'} />
       </SwiperSlide>
       <SwiperSlide className="h-[180px] lg:h-[400px]">
         <CardFood image={larb} name={'LARB'} />
