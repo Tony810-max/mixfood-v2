@@ -7,7 +7,7 @@ import FeedBackFooter from './FeedBackFooter';
 
 export default function Footer() {
   return (
-    <div className="container flex justify-around items-center">
+    <div className="container flex flex-col lg:flex-row justify-around items-center gap-8">
       <ContactUsFooter />
       <LogoFooter />
       <NavFooter />

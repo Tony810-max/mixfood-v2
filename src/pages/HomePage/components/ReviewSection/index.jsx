@@ -11,11 +11,11 @@ import ReviewCard from '../../../../components/ReviewCard';
 
 export default function ReviewSection() {
   return (
-    <div className=" container py-20 flex flex-col gap-10">
+    <div className=" container py-20 flex flex-col gap-10 px-3">
       <span className="text-5xl font-dancing-script flex justify-center font-extrabold">
         Review
       </span>
-      <div className="flex gap-5 ">
+      <div className="flex  flex-col lg:flex-row gap-5">
         <div className="flex-1">
           <img src={imgMain} alt="" className="" />
         </div>

@@ -6,7 +6,7 @@ export default function ReviewCard({ region, name, comment, dateTime }) {
   return (
     <div className="h-full flex flex-col items-center gap-5">
       <span className="text-2xl font-bold font-poppins-font ">{region}</span>
-      <span className="border-solid border-y-[3px] border-x-[35px] border-black-600 "></span>
+      <span className="border-solid border-y-2 border-x-[35px] border-black "></span>
       <div className="flex">
         <Star size={30} fill="#fefd00" color="" />
         <Star size={30} fill="#fefd00" color="" />
