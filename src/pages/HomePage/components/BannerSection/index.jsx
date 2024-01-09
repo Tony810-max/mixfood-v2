@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-import bannerImage from '../../../../assets/images/Banner/banner.png';
+// import bannerImage from '../../../../assets/images/Banner/banner.png';
+import bannerImage from '../../../../assets/images/Banner/banner.jpg';
 import { Button } from '@mui/material';
 import BookTableModal from '../../../../components/BookTableModal';
 

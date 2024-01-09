@@ -1,8 +1,9 @@
 import React from 'react';
 
-import aboutImage from '../../../../../assets/images/About/about.png';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+
+import aboutImage from '../../../../../assets/images/About/com-ruoc.jpg';
 
 export default function AboutUs() {
   return (
@@ -38,7 +39,7 @@ export default function AboutUs() {
           <img
             src={aboutImage}
             alt="aboutImage"
-            className="w-full bg-cover h-full object-fill"
+            className="w-full bg-cover h-full "
           />
         </div>
       </div>
