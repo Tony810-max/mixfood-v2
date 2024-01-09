@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function OurContact() {
   return (
-    <div className="bg-[#2c2c2c] flex flex-col justify-center items-center">
+    <div className="bg-[#2c2c2c] w-full flex-1 flex flex-col justify-center items-center py-6">
       <span className="text-white text-2xl font-extrabold py-5">
         FIND US HERE
       </span>

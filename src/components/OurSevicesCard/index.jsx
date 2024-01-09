@@ -1,12 +1,29 @@
 /* eslint-disable react/prop-types */
+import classNames from 'classnames';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function OurSevicesCard({ image, title, content, check }) {
+export default function OurSevicesCard({
+  image,
+  title,
+  content,
+  check,
+  className,
+  imgClassName,
+}) {
   const [hover, setHover] = useState(false);
   return (
-    <div className="lg:row-span-2 relative flex items-center justify-center">
-      <img src={image} alt="" className="h-full w-full" />
+    <div
+      className={classNames(
+        'relative w-full flex-1 flex items-center justify-center',
+        className
+      )}
+    >
+      <img
+        src={image}
+        alt=""
+        className={classNames('h-full w-full', imgClassName)}
+      />
       <div className="absolute bg-[#eee] opacity-50 w-full h-full">
         <div className="flex flex-col items-center justify-center h-full gap-4">
           <span className="text-[--black-color] font-Roboto-font text-xl lg:text-3xl">

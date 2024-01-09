@@ -32,10 +32,10 @@ export default function BookTableModal({ onClose, open }) {
         onClose={onClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-        className="absolute sm:w-full h-full "
+        className="absolute sm:w-full h-full"
       >
         <Box
-          className="max-[300px]:w-full  w-[340px] md:w-[400px] p-4 md:p-6 overflow-y-auto h-[600px] sm:h-auto  "
+          className="max-[300px]:w-full p-6 overflow-y-auto h-[500px] md:h-auto rounded-xl"
           sx={style}
         >
           <XCircle

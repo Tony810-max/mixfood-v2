@@ -13,12 +13,14 @@ import AboutSection from './components/AboutSection';
 import BookSection from './components/BookSection';
 import OurSeviceSection from './components/OurSeviceSection';
 import BestMenuSection from './components/BestMenuSection';
+import ReviewSection from './components/ReviewSection';
+import Footer from '../../components/layout/Footer';
 
 export default function HomePage() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
 
   return (
-    <div className="relative flex flex-col min-h-[100vh] items-end lg:items-center">
+    <div className="relative flex flex-col min-h-[100vh] items-center">
       <div
         onClick={() => setToggleSidebar(!toggleSidebar)}
         className="absolute z-50 top-24 right-10 self-end visible lg:invisible"
@@ -32,6 +34,8 @@ export default function HomePage() {
       <BookSection />
       <OurSeviceSection />
       <BestMenuSection />
+      <ReviewSection />
+      <Footer />
     </div>
   );
 }

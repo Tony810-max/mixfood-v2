@@ -6,11 +6,11 @@ import noodle from '../../../../assets/images/Food/Noodle.png';
 
 export default function BestMenuSection() {
   return (
-    <div className="min-h-[100vh] mt-5 flex flex-col container items-center">
-      <span className="py-10 text-5xl  font-Roboto-font font-bold">
+    <div className="min-h-[100vh] py-20 flex flex-col container items-center gap-20">
+      <span className="text-5xl font-dancing-script font-bold">
         SPECIALITIES
       </span>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-4 gap-5 w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <SpecialCard
           image={padthai}
           name={'Seafood Pad Thai'}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Checkbox, TextField } from '@mui/material';
+import { Button, Checkbox, TextField } from '@mui/material';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -26,7 +26,6 @@ export default function BookForm() {
           },
           '& label': { color: 'var(--white-color)' },
         }}
-        className=""
       />
       <TextField
         label="Phone Number"
@@ -44,7 +43,6 @@ export default function BookForm() {
               paddingTop: '0',
               paddingBottom: '0',
               paddingRight: '18px',
-              // paddingLeft: '18px',
             },
           },
           '& label.Mui-focused': {
@@ -105,11 +103,22 @@ export default function BookForm() {
         </DemoContainer>
       </LocalizationProvider>
       <div className="flex items-center py-2">
-        <Checkbox color="success" sx={{ color: 'white' }} defaultChecked />
+        <Checkbox
+          sx={{
+            color: '#fff',
+            '&.Mui-checked': {
+              color: '#fff',
+            },
+          }}
+          defaultChecked
+        />
         <span className="text-[--white-color] sm:text-xl">
           I confirm that the above information is correct.
         </span>
       </div>
+      <Button className="bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] text-[var(--white-color)] sm:text-xl ">
+        BOOK
+      </Button>
     </form>
   );
 }

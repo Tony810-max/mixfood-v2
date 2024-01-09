@@ -2,11 +2,13 @@
 
 import React from 'react';
 
-export default function OurSevice({ Icon, content, number, Color }) {
+export default function OurSevice({ Icon, content, number, color }) {
   return (
-    <div className="text-center">
-      <Icon size={number} color={Color} className="m-auto" />
-      <span className="  text-xl font-Roboto-font py-2">{content}</span>
+    <div className=" flex flex-col items-center gap-8 border border-[#000] rounded-xl p-8">
+      <Icon size={number} color={color} />
+      <span className="text-xl font-Roboto-font text-center whitespace-normal">
+        {content}
+      </span>
     </div>
   );
 }
