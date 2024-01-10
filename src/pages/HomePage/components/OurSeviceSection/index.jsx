@@ -10,7 +10,7 @@ import ListServices from './ListServices';
 export default function OurSeviceSection() {
   return (
     <div className="min-h-[100vh] flex flex-col container w-full py-20">
-      <span className="font-dancing-script  text-center font-bold text-5xl py-8">
+      <span className="font-dancing-script text-3xl text-center font-bold lg:text-5xl py-8">
         OUR SERVICES
       </span>
       <ListServices />

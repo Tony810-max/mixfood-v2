@@ -14,13 +14,13 @@ export default function FeedBackFooter() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <div className="flex-1 flex flex-col items-center ">
+    <div className="flex-1 flex flex-col items-center py-3 px-2">
       {feedback ? (
-        <div className=" w-full flex flex-col items-center gap-4">
-          <span className="text-xl font-Roboto-font font-bold">
+        <div className=" w-full flex flex-col items-center gap-4 bg-white rounded-lg py-3">
+          <span className="text-xl font-Roboto-font font-bold text-black">
             Share your feedback with us...!!!
           </span>
-          <form className="flex flex-col gap-3 w-full">
+          <form className="flex flex-col gap-3 w-full px-2">
             <TextField
               className="w-full"
               label="Full Name"
@@ -34,6 +34,7 @@ export default function FeedBackFooter() {
             <TextArea
               className="w-full"
               placeholder="Please share your feedback with us"
+              rows={4}
             />
             <div className="flex flex-col gap-3">
               <Button

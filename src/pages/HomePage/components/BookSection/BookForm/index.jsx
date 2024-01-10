@@ -8,10 +8,11 @@ import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 
 export default function BookForm() {
   return (
-    <form className="flex flex-col sm:gap-4 gap-2">
-      <TextField label="Name" variant="outlined" />
-      <TextField label="Phone Number" variant="outlined" />
+    <form className="flex flex-col sm:gap-4 gap-2  w-full ">
+      <TextField className="w-full" label="Name" variant="outlined" />
+      <TextField className="w-full" label="Phone Number" variant="outlined" />
       <TextField
+        className="w-full"
         type="number"
         label="Number of people participating"
         variant="outlined"
@@ -20,10 +21,7 @@ export default function BookForm() {
       />
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DemoContainer components={['DateTimePicker']}>
-          <DateTimePicker
-            label="Basic date time picker"
-            defaultValue={AdapterDayjs}
-          />
+          <DateTimePicker label="Basic date time picker" />
         </DemoContainer>
       </LocalizationProvider>
       <div className="flex items-center py-2">
