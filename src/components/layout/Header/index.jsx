@@ -17,7 +17,7 @@ export default function Header() {
         className="flex flex-col justify-center gap-2 no-underline"
       >
         <img alt="" src={logo} className="w-[250px] lg:w-[300px]" />
-        <span className="text-[var(--white-color)] italic text-sm w-full text-center">
+        <span className="text-[var(--white-color)] italic text-lg w-full text-center">
           THAI RESTAURANT DA NANG
         </span>
       </Link>

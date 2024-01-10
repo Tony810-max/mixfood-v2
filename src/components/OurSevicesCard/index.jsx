@@ -9,7 +9,6 @@ export default function OurSevicesCard({
   content,
   check,
   className,
-  imgClassName,
 }) {
   const [hover, setHover] = useState(false);
   return (
@@ -19,11 +18,7 @@ export default function OurSevicesCard({
         className
       )}
     >
-      <img
-        src={image}
-        alt=""
-        className={classNames('h-full w-full', imgClassName)}
-      />
+      <img src={image} alt="" className={classNames('h-full w-full')} />
       <div className="absolute bg-[#eee] opacity-50 w-full h-full">
         <div className="flex flex-col items-center justify-center h-full gap-4">
           <span className="text-[--black-color] font-Roboto-font text-xl lg:text-3xl">

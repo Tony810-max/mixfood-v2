@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-import aboutImage from '../../../../../assets/images/About/com-ruoc.jpg';
+import aboutImage from '../../../../../assets/images/Food/thaiShrimpSalad.png';
 
 export default function AboutUs() {
   return (
@@ -11,8 +11,8 @@ export default function AboutUs() {
       <span className="font-extrabold text-3xl lg:text-5xl italic font-dancing-script flex justify-center">
         ABOUT US
       </span>
-      <div className="flex gap-12 flex-col lg:flex-row">
-        <div className="flex flex-1 flex-col gap-4">
+      <div className="flex gap-12 flex-col lg:flex-row ">
+        <div className="flex flex-1 flex-col gap-4 justify-center">
           <span className="font-medium text-xl italic">
             Welcome to our Thai restaurant...!
           </span>
@@ -35,11 +35,11 @@ export default function AboutUs() {
             </Button>
           </Link>
         </div>
-        <div className="flex w-full flex-1 h-full">
+        <div className="flex w-full flex-1 ">
           <img
             src={aboutImage}
             alt="aboutImage"
-            className="w-full bg-cover h-full "
+            className="w-full bg-cover h-full"
           />
         </div>
       </div>

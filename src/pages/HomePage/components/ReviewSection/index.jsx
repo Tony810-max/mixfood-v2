@@ -20,7 +20,7 @@ export default function ReviewSection() {
           <img src={imgMain} alt="" className="" />
         </div>
         <div className="flex-1 overflow-hidden my-auto">
-          <Carousel className="w-full h-full" autoplay>
+          <Carousel className="w-full h-full" autoplay dots={false}>
             <ReviewCard
               region="Viet Nam"
               name={'Nhat Minh'}

@@ -20,7 +20,7 @@ export default function HomePage() {
   const [toggleSidebar, setToggleSidebar] = useState(false);
 
   return (
-    <div className="relative flex flex-col min-h-[100vh] items-center">
+    <div className="relative flex flex-col min-h-[100vh] items-center bg-[#cccc]">
       <div
         onClick={() => setToggleSidebar(!toggleSidebar)}
         className="absolute z-50 top-24 right-10 self-end visible lg:invisible"
