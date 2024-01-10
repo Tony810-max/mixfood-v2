@@ -43,31 +43,31 @@ export default function AboutSwiper() {
         },
       }}
     >
-      <SwiperSlide className="h-[180px] lg:h-[400px]">
+      <SwiperSlide className="h-[250px] lg:h-[400px]">
         <CardFood image={noodle} name={'NOODLE'} />
       </SwiperSlide>
-      <SwiperSlide className="h-[180px] lg:h-[400px]">
+      <SwiperSlide className="h-[250px] lg:h-[400px]">
         <CardFood image={curry} name={'CURRY'} />
       </SwiperSlide>
-      <SwiperSlide className="h-[180px] lg:h-[400px]">
+      <SwiperSlide className="h-[250px] lg:h-[400px]">
         <CardFood image={vermicelliSalad} name={'VERMICELLI SALAD'} />
       </SwiperSlide>
-      <SwiperSlide className="h-[180px] lg:h-[400px]">
+      <SwiperSlide className="h-[250px] lg:h-[400px]">
         <CardFood image={padthai} name={'PAD THAI'} />
       </SwiperSlide>
-      <SwiperSlide className="h-[180px] lg:h-[400px]">
+      <SwiperSlide className="h-[250px] lg:h-[400px]">
         <CardFood image={tomyum} name={'TOMYUM'} />
       </SwiperSlide>
-      <SwiperSlide className="h-[180px] lg:h-[400px]">
+      <SwiperSlide className="h-[250px] lg:h-[400px]">
         <CardFood image={goixoai} name={'MANGO SALAD'} />
       </SwiperSlide>
-      <SwiperSlide className="h-[180px] lg:h-[400px]">
+      <SwiperSlide className="h-[250px] lg:h-[400px]">
         <CardFood image={thaiShrimpSalad} name={'THAI SHRIMP SALAD'} />
       </SwiperSlide>
-      <SwiperSlide className="h-[180px] lg:h-[400px]">
+      <SwiperSlide className="h-[250px] lg:h-[400px]">
         <CardFood image={hotPot} name={'THAI HOTPOT'} />
       </SwiperSlide>
-      <SwiperSlide className="h-[180px] lg:h-[400px]">
+      <SwiperSlide className="h-[250px] lg:h-[400px]">
         <CardFood image={larb} name={'LARB'} />
       </SwiperSlide>
     </Swiper>
