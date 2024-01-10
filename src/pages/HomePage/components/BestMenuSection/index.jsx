@@ -6,8 +6,8 @@ import noodle from '../../../../assets/images/Food/Noodle.png';
 
 export default function BestMenuSection() {
   return (
-    <div className="min-h-[100vh] py-20 flex flex-col container items-center gap-20">
-      <span className="text-3xl lg:text-5xl font-dancing-script font-bold">
+    <div className="min-h-[100vh] flex flex-col container items-center ">
+      <span className="text-3xl lg:text-5xl font-dancing-script font-bold py-10">
         SPECIALITIES
       </span>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

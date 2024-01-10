@@ -19,7 +19,7 @@ export default function SpecialCard({ image, name, price, title, label }) {
             })}
           </span>
         </div>
-        <div className="flex justify-between ">
+        <div className="flex justify-between items-center py-3">
           <span className="text-lg italic">{title}</span>
           <span className="text-lg bg-[--primary-color] text-[--white-color] py-1 px-2 font-semibold italic rounded-xl">
             {label}

@@ -8,7 +8,7 @@ import FeedBackFooter from './FeedBackFooter';
 export default function Footer() {
   return (
     <div className="bg-black w-full ">
-      <div className=" flex w-full flex-col lg:flex-row justify-around items-center gap-8 text-[--white-color]">
+      <div className=" flex w-full flex-col py-3  lg:flex-row justify-around items-center gap-8 text-[--white-color]">
         <ContactUsFooter />
         <LogoFooter />
         <NavFooter />

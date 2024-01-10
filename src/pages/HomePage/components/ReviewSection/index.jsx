@@ -11,9 +11,9 @@ import ReviewCard from '../../../../components/ReviewCard';
 
 export default function ReviewSection() {
   return (
-    <div className=" container py-20 flex flex-col gap-10 px-3">
-      <span className="text-5xl font-dancing-script flex justify-center font-extrabold py-5">
-        Review
+    <div className=" container  flex flex-col  px-3 py-2">
+      <span className="text-5xl font-dancing-script flex justify-center font-extrabold py-10">
+        REVIEW
       </span>
       <div className="flex  flex-col lg:flex-row gap-5">
         <div className="flex-1">
