@@ -8,7 +8,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import 'swiper/swiper-bundle.css';
 import './App.scss';
-
 import HomePage from './pages/HomePage';
 
 function App() {

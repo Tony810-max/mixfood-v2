@@ -1,49 +1,43 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { XCircle } from 'lucide-react';
 
-export default function Sidebar({ onToggle }) {
+import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+
+const SubHeader = ({ check }) => {
+  const handleClose = () => {
+    check(false);
+  };
+
   return (
-    <div className="absolute z-[999] right-0 flex lg:hidden flex-col bg-[#3e3f3d] h-full py-6 px-4 gap-6">
-      <div
-        onClick={() => onToggle(prev => !prev)}
-        className="self-end hover:opacity-60 cursor-pointer"
-      >
-        <XCircle size={32} color="#fff" />
+    <div className="fixed flex flex-col top-20 p-4 backdrop-blur w-full z-[99999] ">
+      <div className="text-white p-4 flex flex-col gap-1 md:gap-8 font-cormorant-serif text-xl font-normal leading-normal">
+        <Link to={'/'} className="font-cormorant-serif">
+          Menu
+        </Link>
+        <Link to={'/'} className="font-cormorant-serif">
+          Fine Dining
+        </Link>
+        <Link to={'/'} className="font-cormorant-serif">
+          About
+        </Link>
+        <Link to={'/'} className="font-cormorant-serif">
+          Contact
+        </Link>
       </div>
-      <Link
-        to={'#'}
-        className="px-12 hover:opacity-60 no-underline text-[#fff] text-2xl font-light"
-      >
-        HOME
-      </Link>
-      <Link
-        to={'#'}
-        className="px-12 hover:opacity-60 no-underline text-[#fff] text-2xl font-light"
-      >
-        ABOUT US
-      </Link>
-      <Link
-        to={'#'}
-        className="px-12 hover:opacity-60 no-underline text-[#fff] text-2xl font-light"
-      >
-        MENU
-      </Link>
-      <Link
-        to={'#'}
-        className="px-12 hover:opacity-60 no-underline text-[#fff] text-2xl font-light"
-      >
-        SHOP
-      </Link>
-      <Link
-        to={'#'}
-        className="px-12 hover:opacity-60 no-underline text-[#fff] text-2xl font-light"
-      >
-        CONTACT
-      </Link>
+      <div className="flex gap-3">
+        <Button className="rounded-none text-center text-xl uppercase border-2 border-solid border-[#F5BE32] font-semibold font-cormorant-serif text-[#F5BE32] hover:opacity-70">
+          Reservation
+        </Button>
+        <Button
+          className="rounded-none text-center text-xl uppercase border-2 border-solid border-[#F5BE32] font-semibold font-cormorant-serif text-[#F5BE32] hover:opacity-70"
+          onClick={handleClose}
+        >
+          Close
+        </Button>
+      </div>
     </div>
   );
-}
+};
+
+export default SubHeader;

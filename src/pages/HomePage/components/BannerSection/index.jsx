@@ -1,41 +1,33 @@
-import React, { useState } from 'react';
-
-// import bannerImage from '../../../../assets/images/Banner/banner.png';
-import bannerImage from '../../../../assets/images/Banner/banner.jpg';
+/* eslint-disable import/no-unresolved */
+import React from 'react';
+import BANNER_HOME_PAGE_BACKGROUND from '../../../../assets/images/HomePage/background.webp';
 import { Button } from '@mui/material';
-import BookTableModal from '../../../../components/BookTableModal';
 
-export default function BannerSection() {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
+const BannerSection = () => {
   return (
-    <div className="w-full h-[100vh] relative flex justify-center items-center">
+    <div className="h-screen flex flex-col justify-center items-center relative">
       <img
-        src={bannerImage}
-        alt="banner"
-        className="absolute w-full bg-contain no-repeat h-full"
+        src={BANNER_HOME_PAGE_BACKGROUND}
+        alt="bg"
+        className="absolute top-0 left-0 bottom-0 w-full h-full z-[-1]"
       />
-      <div className="absolute flex flex-col items-center gap-4 text-justify	">
-        <span className="text-[var(--white-color)]  text-2xl md:text-6xl font-light drop-shadow">
-          THAI RESTAURANT
+      <div className="flex flex-col items-center">
+        <span className="font-great-vibes text-white text-2xl tracking-wider capitalize">
+          Best sushi in town
         </span>
-        <span className="text-[var(--white-color)]  text-4xl md:text-9xl font-dancing-script">
-          MIX FOOD
+        <span className="font-cinzel-serif leading-normal text-[#F3D382] text-6xl font-bold text-center max-w-[49.75rem]">
+          Taste the rich flavor of high quality sushi
         </span>
-        <span className="text-[var(--white-color)] text-xl font-medium">
-          THAI RESTAURANT DA NANG
+        <span className="text-[#D9D9D9] text-center text-xl leading-normal max-w-[23rem]">
+          We only use the five star quality for our menu, come and get the
+          richness in every food we serve.
         </span>
-        <Button
-          variant="contained"
-          className="bg-[--primary-color] text-2xl px-8 mt-8 hover:bg-[--secondary-color]"
-          onClick={handleOpen}
-        >
-          BOOK A TABLE
-        </Button>
-        <BookTableModal onClose={handleClose} open={open} />
       </div>
+      <Button className="bg-[#F5BE32] py-3 px-10 mt-[3.06rem] uppercase font-cormorant-serif text-xl text-black font-semibold hover:opacity-70">
+        Go to menu
+      </Button>
     </div>
   );
-}
+};
+
+export default BannerSection;

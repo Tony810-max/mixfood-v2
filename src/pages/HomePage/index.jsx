@@ -1,41 +1,48 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
-import { AlignJustify } from 'lucide-react';
 
-// components
-import Header from '../../components/layout/Header';
 import BannerSection from './components/BannerSection';
-import Sidebar from '../../components/layout/Sidebar';
+import SpecialMenuSection from './components/SpecialMenuSection';
 
-// sections
-import AboutSection from './components/AboutSection';
-import BookSection from './components/BookSection';
-import OurSeviceSection from './components/OurSeviceSection';
-import BestMenuSection from './components/BestMenuSection';
-import ReviewSection from './components/ReviewSection';
+import Header from '../../components/layout/Header';
+import Sidebar from '../../components/layout/Sidebar';
+import LuxurySection from './components/LuxurySection';
+import OurSpecialitiesSection from './components/OurSpecialitiesSection';
+import DiningEventSection from './components/DiningEventSection';
+import SalmonSection from './components/SalmonSection';
+import OurStorySection from './components/OurStorySection';
 import Footer from '../../components/layout/Footer';
 
-export default function HomePage() {
-  const [toggleSidebar, setToggleSidebar] = useState(false);
+import logo from '../../assets/images/logo.webp';
 
+import { AlignJustify } from 'lucide-react';
+
+const HomePage = () => {
+  const [toggleSideBar, setToggleSideBar] = useState(false);
   return (
-    <div className="relative flex flex-col min-h-[100vh] items-center bg-[#f5ede2]">
-      <div
-        onClick={() => setToggleSidebar(!toggleSidebar)}
-        className="absolute z-50 top-24 right-10 self-end visible lg:invisible"
-      >
-        <AlignJustify size={32} color="#fff" />
+    <div className="w-full ">
+      <div className="fixed md:hidden flex items-center justify-between w-full p-5  z-[9999999]">
+        <div className="w-20 h-20">
+          <img src={logo} alt="logo" className="w-full h-full" />
+        </div>
+        <AlignJustify
+          size={32}
+          color="#F5BE32"
+          className=" "
+          onClick={() => setToggleSideBar(!toggleSideBar)}
+        />
       </div>
+      {toggleSideBar && <Sidebar check={setToggleSideBar} />}
       <Header />
-      {toggleSidebar ? <Sidebar onToggle={setToggleSidebar} /> : ''}
       <BannerSection />
-      <AboutSection />
-      <BookSection />
-      <OurSeviceSection />
-      <BestMenuSection />
-      <ReviewSection />
+      <SpecialMenuSection />
+      <LuxurySection />
+      <OurSpecialitiesSection />
+      <DiningEventSection />
+      <SalmonSection />
+      <OurStorySection />
       <Footer />
     </div>
   );
-}
+};
+
+export default HomePage;
