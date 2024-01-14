@@ -11,7 +11,7 @@ const SubHeader = ({ check }) => {
 
   return (
     <div className="fixed flex flex-col top-20 p-4 backdrop-blur w-full z-[99999] ">
-      <div className="text-white p-4 flex flex-col gap-1 md:gap-8 font-cormorant-serif text-xl font-normal leading-normal">
+      <div className="text-white p-4 flex flex-col gap-1 md:gap-8 font-cormorant-serif text-2xl md:text-xl font-normal leading-normal">
         <Link to={'/'} className="font-cormorant-serif">
           Menu
         </Link>
@@ -25,7 +25,7 @@ const SubHeader = ({ check }) => {
           Contact
         </Link>
       </div>
-      <div className="flex gap-3">
+      <div className="flex px-4 gap-3">
         <Button className="rounded-none text-center text-xl uppercase border-2 border-solid border-[#F5BE32] font-semibold font-cormorant-serif text-[#F5BE32] hover:opacity-70">
           Reservation
         </Button>

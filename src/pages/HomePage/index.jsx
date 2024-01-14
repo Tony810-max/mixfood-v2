@@ -20,7 +20,7 @@ const HomePage = () => {
   const [toggleSideBar, setToggleSideBar] = useState(false);
   return (
     <div className="w-full ">
-      <div className="fixed md:hidden flex items-center justify-between w-full p-5  z-[9999999]">
+      <div className="fixed  md:hidden flex items-center justify-between w-full p-5 backdrop-blur  z-[9999999]">
         <div className="w-20 h-20">
           <img src={logo} alt="logo" className="w-full h-full" />
         </div>
