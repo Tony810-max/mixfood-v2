@@ -4,13 +4,13 @@ import React from 'react';
 
 const SpecialitiesCard = ({ image, name, desc, price, order }) => {
   return (
-    <div className="flex container gap-4">
-      <div className={classNames({ 'order-2': order % 2 === 0 })}>
+    <div className="flex flex-col md:flex-row container gap-4 px-2">
+      <div className={classNames({ 'order-1 md:order-2': order % 2 === 0 })}>
         <img src={image} alt="" className="w-full" />
       </div>
       <div
         className={classNames('flex flex-col justify-center ', {
-          'order-1': order % 2 === 0,
+          'order-2 md:order-1': order % 2 === 0,
         })}
       >
         <span className="text-[#F3D382] font-cinzel-serif text-2xl font-bold">

@@ -7,26 +7,26 @@ const DiningEventCard = ({ name, price, desc, image, order }) => {
   return (
     <div
       className={classNames(
-        'relative flex items-center h-full w-full justify-end',
+        'lg:relative flex lg:flex-row flex-col mt-40 h-full w-full justify-end lg:px-3',
         {
-          'flex-row-reverse': order % 2 === 0,
+          'flex-row lg:flex-row-reverse': order % 2 === 0,
         }
       )}
     >
       <div
         className={classNames(
-          'absolute z-30 top-1/2 -translate-y-1/2 left-12 flex gap-3',
+          'lg:absolute z-30 lg:top-1/2 lg:left-2  -translate-y-1/2 xl:left-12 flex gap-3',
           {
-            'flex-row-reverse right-40 ': order % 2 === 0,
+            'lg:flex-row-reverse lg:right-40 ': order % 2 === 0,
           }
         )}
       >
-        <span className="text-[#F3D382] font-cinzel-serif text-[2.9rem] font-bold -mt-8 ">
+        <span className="text-[#F3D382] font-cinzel-serif text-[2.9rem] font-bold lg:-mt-8 ">
           ${price}
         </span>
         <div
           className={classNames('flex flex-col', {
-            'items-end': order % 2 === 0,
+            'lg:items-end': order % 2 === 0,
           })}
         >
           <span className="text-[#F3D382] font-cinzel-serif text-2xl  font-bold">
@@ -34,9 +34,9 @@ const DiningEventCard = ({ name, price, desc, image, order }) => {
           </span>
           <span
             className={classNames(
-              'text-[#D9D9D9] max-w-[14rem] text-xl font-medium',
+              'text-[#D9D9D9] lg:max-w-[14rem] text-xl font-medium',
               {
-                'text-right': order % 2 === 0,
+                'lg:text-right': order % 2 === 0,
               }
             )}
           >

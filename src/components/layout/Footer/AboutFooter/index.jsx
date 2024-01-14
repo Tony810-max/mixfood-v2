@@ -4,7 +4,7 @@ import { MapPin, Phone } from 'lucide-react';
 
 const AboutFooter = () => {
   return (
-    <div className="flex gap-5 mt-5">
+    <div className="flex flex-col sm:flex-row gap-5 mt-5">
       <div className="flex gap-3  ">
         <MapPin size={36} fill="#F5BE32" color="black" />
         <span className="text-[#D9D9D9] font-DM-Sans text-xl leading-normal max-w-[20rem]">

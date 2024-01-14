@@ -61,7 +61,7 @@ const DiningEventSection = () => {
             </Button>
           ))}
         </div>
-        <div className="flex flex-col items-center mt-12 h-full">
+        <div className="flex flex-col items-center  lg:mt-12 h-full">
           {currentTab?.data?.map(itemp => (
             <DiningEventCard
               key={itemp.id}
