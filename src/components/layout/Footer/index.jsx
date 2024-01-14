@@ -10,7 +10,7 @@ const Footer = () => {
     <div className=" w-full relative z-0 ">
       <img src={footerBanner} alt="" className="w-full  " />
       <div className="absolute z-30 top-0 bottom-0 flex flex-col items-center w-full py-[6.25rem] text-white">
-        <span className="text-[#F3D382] text-center font-cinzel-serif text-6xl font-bold max-w-[52rem] leading-normal">
+        <span className="text-[#F3D382] text-center font-cinzel-serif text-xl lg:text-6xl font-bold max-w-[52rem] leading-normal">
           We ready to have you the best dining experiences
         </span>
         <AboutFooter />

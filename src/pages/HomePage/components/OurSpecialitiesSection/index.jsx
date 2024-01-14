@@ -8,7 +8,9 @@ import sushi12 from '../../../../assets/images/HomePage/sushi12.webp';
 
 import SpecialitiesCard from '../../../../components/Card/SpecialitiesCard';
 import { Button } from '@mui/material';
+
 import classNames from 'classnames';
+import DropDownOurSpecial from './DropDownOurSpecial';
 
 const OurSpecialitiesSection = () => {
   const [currentTab, setCurrentTab] = useState({
@@ -54,7 +56,7 @@ const OurSpecialitiesSection = () => {
           ingredients
         </span>
       </div>
-      <div className="mt-8 flex gap-5">
+      <div className="mt-8 sm:flex gap-5 hidden">
         {DATA_SPECIALITIES_TABS.map(tab => (
           <Button
             key={tab.id}
@@ -70,6 +72,7 @@ const OurSpecialitiesSection = () => {
           </Button>
         ))}
       </div>
+      <DropDownOurSpecial curTab={setCurrentTab} />
       <div className="flex flex-col mt-7">
         {currentTab?.data?.map(itemp => (
           <motion.div
@@ -98,7 +101,7 @@ const OurSpecialitiesSection = () => {
 
 export default OurSpecialitiesSection;
 
-const DATA_SPECIALITIES_TABS = [
+export const DATA_SPECIALITIES_TABS = [
   {
     id: 1,
     name: 'Specialities',

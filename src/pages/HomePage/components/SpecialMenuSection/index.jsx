@@ -18,7 +18,7 @@ const SpecialMenuSection = () => {
           food for today
         </span>
       </div>
-      <div className="grid grid-cols-3 container h-full mt-11">
+      <div className="grid md:grid-cols-3 grid-cols-1 container h-full mt-11">
         {DATA?.map(item => (
           <SpecialCard
             key={item.id}
