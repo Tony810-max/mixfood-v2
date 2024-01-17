@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { MenuItem, Select } from '@mui/material';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -20,9 +21,9 @@ const DropdownHeader = () => {
             border: 0,
           },
           '&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline':
-            {
-              border: 0,
-            },
+          {
+            border: 0,
+          },
         }}
       >
         <MenuItem

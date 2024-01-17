@@ -1,13 +1,13 @@
 import React from 'react';
 
-import SignUpHeader from '../../components/layout/AuthLayout/HeaderSignUp';
-import imgSignUp from '../../assets/images/SignUp/imgSignUp.webp';
+import SignUpHeader from '../../../components/layout/AuthLayout/HeaderSignUp';
+import imgSignUp from '../../../assets/images/SignUp/imgSignUp.webp';
 
 import SignUpTitle from './SignUpTitle';
 import SignUpSocialButton from './SignUpSocialButton';
 import SignUpNotice from './SignUpNotice';
 
-const SignUpPage = () => {
+const PreLoginPage = () => {
   return (
     <div>
       <SignUpHeader />
@@ -25,4 +25,4 @@ const SignUpPage = () => {
   );
 };
 
-export default SignUpPage;
+export default PreLoginPage;

@@ -3,7 +3,6 @@ import SpecialCard from '../../../../components/Card/SpecialCard';
 
 import sushi from '../../../../assets/images/HomePage/sushi3.webp';
 import sushi1 from '../../../../assets/images/HomePage/sushi1.webp';
-import sushi3 from '../../../../assets/images/HomePage/sushi3.webp';
 
 const SpecialMenuSection = () => {
   return (
@@ -56,7 +55,7 @@ const DATA = [
   {
     id: 3,
     name: 'Just Sushi',
-    image: sushi3,
+    image: sushi,
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut imperdiet lectus.',
     theme: 'default',
     rate: 3,
