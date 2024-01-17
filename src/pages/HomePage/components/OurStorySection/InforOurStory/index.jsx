@@ -16,15 +16,20 @@ const InforOurStory = () => {
           <img src={chef2} alt="" className="flex-1" />
         </div>
       </div>
-      <div className="flex-1 flex flex-col items-center px-3">
-        <span className="text-[#D9D9D9] font-DM-Sans text-xl whitespace-pre-line">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-          feugiat urna id leo euismod rhoncus. Aliquam erat volutpat. Nulla id
-          aliquam neque, at dignissim quam. Praesent et lacus accumsan,
-          consequat nisl a, mattis sapien. Nam sodales ullamcorper aliquet.
-          Phasellus ut pretium libero, vitae imperdiet purus. Sed sed tincidunt
-          velit. Aliquam vitae ipsum molestie, vehicula nisi quis, finibus leo
-        </span>
+      <div className="flex-1 flex flex-col items-center px-3 py-4">
+        <div className="flex flex-col gap-6">
+          <span className="max-w-[28.75rem] text-[#D9D9D9] font-DM-Sans text-xl text-justify whitespace-pre-line ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            feugiat urna id leo euismod rhoncus. Aliquam erat volutpat. Nulla id
+            aliquam neque, at dignissim quam. Praesent et lacus accumsan,
+            consequat nisl a, mattis sapien.
+          </span>
+          <span className="max-w-[28.75rem] text-[#D9D9D9] font-DM-Sans text-xl whitespace-pre-line text-justify">
+            Nam sodales ullamcorper aliquet. Phasellus ut pretium libero, vitae
+            imperdiet purus. Sed sed tincidunt velit. Aliquam vitae ipsum
+            molestie, vehicula nisi quis, finibus leo
+          </span>
+        </div>
         <Link to={'/'} className="mt-9 xl:mt-12">
           <Button className="border-2 border-solid border-[#F5BE32] py-3 px-4 text-[#F5BE32] font-cormorant-serif text-xl font-semibold uppercase shadow-button-shadow hover:opacity-70">
             More about us

@@ -1,42 +1,43 @@
 /* eslint-disable react/prop-types */
+import React, { useMemo } from 'react';
 import classNames from 'classnames';
-import React from 'react';
 
 const DiningEventCard = ({ name, price, desc, image, order }) => {
-  console.log(order);
+  const isEvenOrder = useMemo(() => order % 2 === 0, [order]);
+
   return (
     <div
-      className={classNames(
-        'lg:relative flex lg:flex-row flex-col mt-40 h-full w-full justify-end lg:px-3',
-        {
-          'flex-row lg:flex-row-reverse': order % 2 === 0,
-        }
-      )}
+      className={classNames('relative flex h-full w-full justify-end lg:px-3', {
+        'lg:flex-row': !isEvenOrder,
+        'lg:flex-row-reverse': isEvenOrder,
+      })}
     >
       <div
+        style={{ direction: isEvenOrder ? 'rtl' : 'ltr' }}
         className={classNames(
-          'lg:absolute z-30 lg:top-1/2 lg:left-2  -translate-y-1/2 xl:left-12 flex gap-3',
+          'absolute z-30 top-1/2 -translate-y-1/2 lg:left-12 flex gap-3',
           {
-            'lg:flex-row-reverse lg:right-40 ': order % 2 === 0,
+            'lg:left-2 left-0': !isEvenOrder,
+            'lg:right-40': isEvenOrder,
           }
         )}
       >
-        <span className="text-[#F3D382] font-cinzel-serif text-[2.9rem] font-bold lg:-mt-8 ">
+        <span className="text-[#F3D382] font-cinzel-serif text-3xl lg:text-[2.9rem] font-bold lg:-mt-2 ">
           ${price}
         </span>
         <div
           className={classNames('flex flex-col', {
-            'lg:items-end': order % 2 === 0,
+            'lg:items-end': isEvenOrder,
           })}
         >
-          <span className="text-[#F3D382] font-cinzel-serif text-2xl  font-bold">
+          <span className="text-[#F3D382] font-cinzel-serif text-lg lg:text-2xl  font-bold">
             {name}
           </span>
           <span
             className={classNames(
-              'text-[#D9D9D9] lg:max-w-[14rem] text-xl font-medium',
+              'text-[#D9D9D9] lg:max-w-[14rem] text-base lg:text-xl font-medium',
               {
-                'lg:text-right': order % 2 === 0,
+                'lg:text-right': isEvenOrder,
               }
             )}
           >
@@ -47,12 +48,10 @@ const DiningEventCard = ({ name, price, desc, image, order }) => {
       <div className="relative">
         <img src={image} alt="" className="z-10" />
         <span
-          className={classNames(
-            'absolute w-full h-full top-0 z-20 bg-gradient-linear-ver-1',
-            {
-              'bg-gradient-linear-ver-2': order % 2 === 0,
-            }
-          )}
+          className={classNames('absolute w-full h-full top-0 z-20', {
+            'bg-gradient-linear-ver-1': !isEvenOrder,
+            'bg-gradient-linear-ver-2': isEvenOrder,
+          })}
         />
       </div>
     </div>

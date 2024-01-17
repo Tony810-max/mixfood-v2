@@ -2,6 +2,7 @@ import React from 'react';
 
 import logo from '../../../assets/images/logo.webp';
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -9,18 +10,40 @@ const Header = () => {
       <div className="w-20 h-20">
         <img src={logo} alt="logo" className="w-full h-full" />
       </div>
-      <div className="text-white flex gap-8 font-cormorant-serif text-xl font-normal leading-normal">
-        <span className="font-cormorant-serif">Menu</span>
-        <span className="font-cormorant-serif">Fine Dining</span>
-        <span className="font-cormorant-serif">About</span>
-        <span className="font-cormorant-serif">Contact</span>
+      <div className=" flex gap-8 ">
+        <Link
+          to={'/'}
+          className="font-cormorant-serif text-xl font-normal leading-normal text-white hover:opacity-70"
+        >
+          Menu
+        </Link>
+        <Link
+          to={'/'}
+          className="font-cormorant-serif text-xl font-normal leading-normal text-white hover:opacity-70"
+        >
+          Fine Dining
+        </Link>
+        <Link
+          to={'/'}
+          className="font-cormorant-serif text-xl font-normal leading-normal text-white hover:opacity-70"
+        >
+          About
+        </Link>
+        <Link
+          to={'/'}
+          className="font-cormorant-serif text-xl font-normal leading-normal text-white hover:opacity-70"
+        >
+          Contact
+        </Link>
       </div>
-      <Button
-        variant="outlined"
-        className="rounded-none text-center text-xl uppercase border-2 border-[#F5BE32] font-semibold font-cormorant-serif text-[#F5BE32] hover:opacity-70"
-      >
-        Reservation
-      </Button>
+      <Link to="/login">
+        <Button
+          variant="outlined"
+          className="rounded-none text-center text-xl uppercase border-2 border-[#F5BE32] font-semibold font-cormorant-serif text-[#F5BE32] hover:opacity-70"
+        >
+          Reservation
+        </Button>
+      </Link>
     </div>
   );
 };

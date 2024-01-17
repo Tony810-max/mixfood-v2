@@ -11,19 +11,19 @@ const ContactFooter = () => {
       <div className="flex gap-6">
         <Link
           to={'/'}
-          className="text-white text-center font-cormorant-serif text-xl font-semibold leading-normal"
+          className="text-white text-center font-cormorant-serif text-xl font-semibold leading-normal hover:opacity-70 "
         >
           Instagram
         </Link>
         <Link
           to={'/'}
-          className="text-white text-center font-cormorant-serif text-xl font-semibold leading-normal"
+          className="text-white text-center font-cormorant-serif text-xl font-semibold leading-normal hover:opacity-70"
         >
           Twitter
         </Link>
         <Link
           to={'/'}
-          className="text-white text-center font-cormorant-serif text-xl font-semibold leading-normal"
+          className="text-white text-center font-cormorant-serif text-xl font-semibold leading-normal hover:opacity-70"
         >
           Facebook
         </Link>

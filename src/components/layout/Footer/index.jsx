@@ -7,15 +7,11 @@ import ContactFooter from './ContactFooter';
 
 const Footer = () => {
   return (
-    <div className="min-h-screen w-full relative z-0 ">
+    <div className="h-fit w-full relative">
       <div className="h-full w-full">
-        <img
-          src={footerBanner}
-          alt=""
-          className="w-full h-full  absolute top-0 bottom-0 left-0 right-0"
-        />
+        <img src={footerBanner} alt="" className="w-full h-full absolute z-0" />
       </div>
-      <div className="absolute z-30  flex flex-col items-center w-full py-[6.25rem] text-white">
+      <div className="z-30 relative flex flex-col items-center w-full py-[6.25rem] text-white">
         <span className="text-[#F3D382] text-center font-cinzel-serif text-xl lg:text-6xl font-bold max-w-[40rem] lg:max-w-[52rem] leading-normal">
           We ready to have you the best dining experiences
         </span>

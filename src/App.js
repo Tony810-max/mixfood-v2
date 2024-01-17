@@ -8,7 +8,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import 'swiper/swiper-bundle.css';
 import './App.scss';
+
 import HomePage from './pages/HomePage';
+import SignUpPage from './pages/SignUpPage';
+import SignUpEmailPage from './pages/SignUpEmailPage';
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/signupemail" element={<SignUpEmailPage />} />
         </Routes>
       </BrowserRouter>
     </div>
