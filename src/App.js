@@ -9,18 +9,25 @@ import 'swiper/css/autoplay';
 import 'swiper/swiper-bundle.css';
 import './App.scss';
 
+// Public
 import HomePage from './pages/HomePage';
-import SignUpPage from './pages/SignUpPage';
-import SignUpEmailPage from './pages/SignUpEmailPage';
+
+// Auth
+import SignUpPage from './pages/Auth/SignUpPage';
+import PreLoginPage from './pages/Auth/PreLoginPage';
+import LoginPage from './pages/Auth/LoginPage';
+
+import ROUTES from './types/routes';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/signup" element={<SignUpPage />} />
-          <Route path="/signupemail" element={<SignUpEmailPage />} />
+          <Route path={ROUTES.HOME} element={<HomePage />} />
+          <Route path={ROUTES.PRE_LOGIN} element={<PreLoginPage />} />
+          <Route path={ROUTES.SIGNUP} element={<SignUpPage />} />
+          <Route path={ROUTES.LOGIN} element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
     </div>

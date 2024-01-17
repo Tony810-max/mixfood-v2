@@ -9,7 +9,7 @@ import { EyeOff } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const SignUpEmailPage = () => {
+const SignUpPage = () => {
   return (
     <div className="">
       <div className="fixed z-0 flex flex-col right-10 top-10">
@@ -81,4 +81,4 @@ const SignUpEmailPage = () => {
   );
 };
 
-export default SignUpEmailPage;
+export default SignUpPage;
